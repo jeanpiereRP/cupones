@@ -36,10 +36,6 @@ input[type="number"]:focus {
     outline: none; /* Eliminar el contorno por defecto */
 }
 
-input[type="number"]::placeholder {
-    color: #b0b3b8; /* Color del placeholder más claro */
-}
-
 button {
     padding: 10px 15px;
     margin: 5px;
