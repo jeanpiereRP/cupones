@@ -16,8 +16,12 @@ function calcularDescuento(porcentaje) {
   if (total > 0) {
     const descuento = total * porcentaje;
     const totalConDescuento = total - descuento;
-    document.getElementById("resultado").innerText += `\nDescuento: $${descuento.toFixed(2)}`;
-    document.getElementById("resultado").innerText += `\nTotal con Descuento: $${totalConDescuento.toFixed(2)}`;
+    
+    // Mostrar el total original, el descuento y el total con descuento
+    document.getElementById("resultado").innerText = 
+      `Total: $${total.toFixed(2)}\n` + 
+      `Descuento: $${descuento.toFixed(2)}\n` + 
+      `Total con Descuento: $${totalConDescuento.toFixed(2)}`;
   } else {
     document.getElementById("resultado").innerText = "Primero calcula el total.";
   }

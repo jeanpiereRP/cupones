@@ -19,12 +19,19 @@ h1 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para el título */
 }
 
+.input-container {
+    display: flex; /* Usar flexbox para alinear los inputs */
+    flex-direction: column; /* Colocar los inputs en columna */
+    align-items: center; /* Centrar horizontalmente */
+}
+
 input[type="number"] {
     padding: 10px;
     margin: 5px;
     border: 1px solid #4b545c; /* Borde gris oscuro */
     border-radius: 5px;
-    width: calc(50% - 22px); /* Ajusta el ancho para que se vea bien */
+    width: 80%; /* Ajusta el ancho para que se vea bien */
+    max-width: 300px; /* Ancho máximo del input */
     font-size: 16px;
     background-color: #3a3f43; /* Fondo de entrada oscuro */
     color: #ffffff; /* Color del texto de entrada claro */
